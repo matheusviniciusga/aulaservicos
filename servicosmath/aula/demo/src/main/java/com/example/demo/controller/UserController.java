@@ -48,7 +48,7 @@ public class UserController {
         }
     }
 
-    @PostMapping("/add");
+    @PostMapping("/login/{id}");
     public boolean userLogin(@RequestBody UserLogin u) throws UserNotFoundException {
         String username = u.getUsername();
         String password = u.getPassword();
